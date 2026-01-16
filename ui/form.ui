@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>466</width>
+    <height>368</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Auto Clicker</string>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QWidget {
+        background-color: #181818;
+        color: #f2f2f2;
+        font-size: 13px;
+    }
+
+    QLabel {
+        color: #ffb366;
+        font-weight: bold;
+    }
+
+    QLineEdit {
+        background-color: #1f1f1f;
+        border: 2px solid #ff8c1a;
+        border-radius: 8px;
+        padding: 6px;
+        color: #ffffff;
+    }
+
+    QLineEdit:hover {
+        border-color: #ffa94d;
+    }
+
+    QLineEdit:focus {
+        border-color: #ff6f00;
+        background-color: #242424;
+    }
+
+    QPushButton {
+        background-color: #ff8c1a;
+        color: #1a1a1a;
+        border: none;
+        border-radius: 12px;
+        padding: 10px 18px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    QPushButton:hover {
+        background-color: #ffa94d;
+    }
+
+    QPushButton:pressed {
+        background-color: #e67300;
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0,0,1,0">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>&lt;p align=&quot;center&quot;&gt;시작 키&lt;/p&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="startkey"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>&lt;p align=&quot;center&quot;&gt;끝 키&lt;/p&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="stopkey"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="enter">
+     <property name="text">
+      <string>적용</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Orientation::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>CPS (초당 클릭수)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="cps"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="start">
+       <property name="text">
+        <string>▶ 시작</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="stop">
+       <property name="text">
+        <string>■ 정지</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
